@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <title>Demo Blog For ocLazyLoad</title>
+        <link rel="stylesheet" href="vendor/bootstrap/bootstrap.css" />
+        <link rel="stylesheet" href="styles/app.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <header class="navbar navbar-default">
+                <nav class="container">
+                    <div class="navbar-header">
+                        <span class="navbar-brand">Dome Blog For
+                            <a target="_blank" href="https://github.com/ocombe/ocLazyLoad">ocLazyLoad</a>
+                        </span>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a ui-sref="index">Home</a></li>
+                        <li><a ui-sref="blog.list">Blog</a></li>
+                        <li><a ui-sref="about">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main ui-view></main>
+            <footer id="footer" class="text-center">
+                <div class="container">
+                    This project hosted on GitHub.
+                </div>
+            </footer>
+        </div>
+
+        <!--
+        we use a standalone file to define app-level modules,
+        so we can concat these vendors in to this file when use `gulp default`,
+        see `gulpfile.js` for more information.
+        -->
+        <script src="app-level-vendors.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

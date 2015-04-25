@@ -1,0 +1,13 @@
+<div class="container">
+    <form ng-submit="save()">
+        <div class="form-group">
+            <label for="title">blog title:</label>
+            <input id="title" class="form-control" type="text" ng-model="blog.title" required />
+        </div>
+        <div class="form-group">
+            <label for="content">blog content:</label>
+            <textarea id="content" class="form-control" ng-model="blog.content" required></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Save</button>
+    </form>
+</div>

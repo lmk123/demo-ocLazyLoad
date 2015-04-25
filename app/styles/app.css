@@ -1,0 +1,14 @@
+html, body, #wrapper {
+    height: 100%;
+}
+
+#wrapper {
+    position: relative;
+}
+
+#footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

@@ -1,0 +1,18 @@
+{
+  "name" : "demo-for-ocLazyLoad" ,
+  "version" : "1.0.0" ,
+  "author" : "milk.lee@qq.com" ,
+  "scripts" : {
+    "test" : "protractor test/protractor.conf.js"
+  } ,
+  "devDependencies" : {
+    "gulp" : "*" ,
+    "gulp-uglify" : "*" ,
+    "gulp-rev-all" : "*" ,
+    "gulp-minify-css" : "*" ,
+    "gulp-htmlmin" : "*" ,
+    "gulp-concat" : "*" ,
+    "gulp-changed" : "*" ,
+    "del" : "*"
+  }
+}

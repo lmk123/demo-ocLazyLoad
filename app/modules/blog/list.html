@@ -1,0 +1,20 @@
+<div class="container">
+    <div ng-show="status.loading" class="text-center">Blogs is loading , please wait a moment ...</div>
+    <div ng-hide="status.loading">
+        <a class="btn btn-primary" ui-sref="blog.edit">Add blog</a>
+        <div ng-hide="blogs.length" class="text-center">There is no blog, you can <a  ui-sref="blog.edit">add one</a>.</div>
+        <div ng-show="blogs.length">
+            <ul>
+                <li ng-repeat="blog in blogs">
+                    <h3>{{blog.title}}</h3>
+
+                    <p>{{blog.content}}</p>
+                    <footer>
+                        <a class="btn btn-default" ng-href="#/blog/edit/{{blog.id}}">Edit this blog</a>
+                        <button class="btn btn-danger" ng-click="delBlog($index)">Delete this blog</button>
+                    </footer>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
