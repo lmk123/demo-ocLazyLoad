@@ -4,8 +4,8 @@ exports.config = {
     directConnect : true ,
     specs : [ './e2e/**/*Spec.js' ] ,
     params : {
-        //urlRoot : 'http://lmk123.github.io/demo-ocLazyLoad/cdn/'
-        urlRoot : 'http://localhost:61111/oc-lazy-load/app/'
+        urlRoot : 'http://lmk123.github.io/demo-ocLazyLoad/cdn/'
+        //urlRoot : 'http://localhost:61111/oc-lazy-load/app/'
     } ,
 
     onPrepare : function () {
