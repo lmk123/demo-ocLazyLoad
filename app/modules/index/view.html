@@ -1,7 +1,67 @@
 <section>
     <div class="container">
-        <h3>A demo blog</h3>
+        <article class="markdown-body entry-content"><h1>
+            <a id="user-content-a-demo-blog-project-for-oclazyload" class="anchor" href="#a-demo-blog-project-for-oclazyload" aria-hidden="true"><span class="octicon octicon-link"></span></a>A
+            demo blog project for <a href="https://github.com/ocombe/ocLazyLoad">ocLazyLoad</a>
+        </h1>
 
-        <p>readme</p>
+            <p>This is a demo blog project created for how to use <a href="https://github.com/ocombe/ocLazyLoad">ocLazyLoad</a>
+                in your project.
+                It provided a build tool (use <a href="https://github.com/gulpjs/gulp">gulp</a>) to combine, minify
+                files and rename them as a content hash (by use <a href="https://github.com/smysnk/gulp-rev-all">gulp-rev-all</a>),
+                so you can put them on CDN.</p>
+
+            <p>P.S. My English is very bad, I hope you can understand what I mean :)</p>
+
+            <h2>
+                <a id="user-content-introduce" class="anchor" href="#introduce" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduce
+            </h2>
+
+            <p>This blog has three modules : <code>Home</code>, <code>Blog</code> and <code>About</code>. Every module
+                has a folder under <a href="https://github.com/lmk123/demo-ocLazyLoad/tree/master/app/modules">app/modules</a>.</p>
+
+            <p>Module <code>Home</code> just a introduce, which is now you are reading :)</p>
+
+            <p>Routers are defined in <a href="https://github.com/lmk123/demo-ocLazyLoad/blob/master/app/app.js">app.js</a>, which can show you how ocLazyLoad works on <code>Blog</code>
+                module with <a href="https://github.com/angular-ui/ui-router">ui-router</a>.
+                <code>Blog</code> module has few controllers, they are used to Create, Delete, Update the blogs.</p>
+
+            <p><code>About</code> module only has a button, When you click it, it will show you a modal by using
+                <a href="https://github.com/angular-ui/bootstrap">ui-bootstrap</a> --
+                but <code>ui-bootstrap-tpls.js</code> only load when you first click this button.</p>
+
+            <h2>
+                <a id="user-content-build-files-for-production" class="anchor" href="#build-files-for-production" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build
+                files for production</h2>
+
+            <p>Download this project, then do:</p>
+
+<pre><code>npm install
+gulp
+</code></pre>
+
+            <h2>
+                <a id="user-content-e2e-test" class="anchor" href="#e2e-test" aria-hidden="true"><span class="octicon octicon-link"></span></a>E2E
+                Test</h2>
+
+            <p>Install <a href="https://github.com/angular/protractor">Protractor</a>, then:</p>
+
+<pre><code>npm test
+</code></pre>
+
+            <h2>
+                <a id="user-content-thanks" class="anchor" href="#thanks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thanks
+            </h2>
+
+            <p>Thanks to <a href="https://github.com/ocombe">@ocombe</a> for his working on
+                <a href="https://github.com/ocombe/ocLazyLoad">ocLazyLoad</a>.
+                It's really a awesome project.</p>
+
+            <h2>
+                <a id="user-content-license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License
+            </h2>
+
+            <p>MIT</p>
+        </article>
     </div>
 </section>

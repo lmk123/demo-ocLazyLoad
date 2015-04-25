@@ -8,11 +8,11 @@ P.S. My English is very bad, I hope you can understand what I mean :)
 
 ## Introduce
 
-This blog has three modules : `Home`, `Blog` and `About`. Every module has a folder under `app/modules`.
+This blog has three modules : `Home`, `Blog` and `About`. Every module has a folder under [app/modules](https://github.com/lmk123/demo-ocLazyLoad/tree/master/app/modules).
 
 Module `Home` just a introduce, which is now you are reading :)
 
-Routers are defined in `app.js`, which can show you how ocLazyLoad works on `Blog` module with [ui-router](https://github.com/angular-ui/ui-router).
+Routers are defined in [app/app.js](https://github.com/lmk123/demo-ocLazyLoad/blob/master/app/app.js), which can show you how ocLazyLoad works on `Blog` module with [ui-router](https://github.com/angular-ui/ui-router).
 `Blog` module has few controllers, they are used to Create, Delete, Update the blogs.
 
 `About` module only has a button, When you click it, it will show you a modal by using [ui-bootstrap](https://github.com/angular-ui/bootstrap) --
