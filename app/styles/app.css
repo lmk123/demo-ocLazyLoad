@@ -1,9 +1,10 @@
-html, body, #wrapper {
+html, body {
     height: 100%;
 }
 
 #wrapper {
     position: relative;
+    min-height: 100%;
 }
 
 #footer {

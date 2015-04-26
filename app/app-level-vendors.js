@@ -7,7 +7,8 @@
         //'../test/angular-mocks.js' ,
         'vendor/angular/ocLazyLoad.js' ,
         'vendor/angular/angular-touch.js' ,
-        'vendor/angular/angular-ui-router.js'
+        'vendor/angular/angular-ui-router.js' ,
+        'app.js'
     ];
 
     var str = '';

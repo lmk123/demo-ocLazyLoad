@@ -2,9 +2,16 @@
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+        <!--we don't wanted browser to cache this file from CDN, so we need disable cache.-->
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+        <meta http-equiv="pragma" content="no-cache" />
+
         <title>Demo Blog For ocLazyLoad</title>
-        <link rel="stylesheet" href="vendor/bootstrap/bootstrap.css" />
-        <link rel="stylesheet" href="styles/app.css" />
+        <!--when in production, we will concat all the app-level styles into this file.-->
+        <link rel="stylesheet" href="app-level-css.css" />
     </head>
     <body>
         <div id="wrapper">
@@ -36,6 +43,5 @@
         see `gulpfile.js` for more information.
         -->
         <script src="app-level-vendors.js"></script>
-        <script src="app.js"></script>
     </body>
 </html>
