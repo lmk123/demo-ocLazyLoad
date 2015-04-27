@@ -7,14 +7,7 @@
     app.config( [
         '$ocLazyLoadProvider' , function ( $llp ) {
             $llp.config( {
-                debug : true ,
-                events : true ,
-                modules : [
-                    {
-                        name : 'BlogModule' ,
-                        files : [ 'modules/blog/module.js' ]
-                    }
-                ]
+                debug : true
             } );
         }
     ] );
@@ -37,7 +30,7 @@
                         }
                     ] ,
                     resolve : {
-                        load : loadDeps( 'BlogModule' )
+                        load : loadDeps( 'modules/blog/module.js' )
                     }
                 } )
                 .state( 'blog.list' , {
