@@ -1,1 +1,0 @@
-angular.module("app.about",[]).controller("AboutController",["$scope","$ocLazyLoad","$injector",function(o,n,t){o.open=function(){n.load("vendor/angular/8f2f6dff639b78f1fba0a651910f4a87.js").then(function(){var n=t.get("$modal");o.open=function(){n.open({templateUrl:"myModalContent.html"})},o.open()})}}]);

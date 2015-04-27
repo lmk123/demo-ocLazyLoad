@@ -1,5 +1,14 @@
-angular.module( 'app.about' , [] ).controller( 'AboutController' , [
-    '$scope' , '$ocLazyLoad' , '$injector' , function ( $scope , $oll , $injector ) {
+angular.module( 'app.about' , [
+    [
+        'services/DependOnTestFactory.js' ,
+        'services/AlsoDependOnTestFactory.js'
+    ]
+] ).controller( 'AboutController' , [
+    '$scope' , '$ocLazyLoad' , '$injector' , 'DependOnTestFactory' , 'AlsoDependOnTestFactory' ,
+    function ( $scope , $oll , $injector , d , ad ) {
+        ad.alertHelloFromAlso();
+        d.alertHello();
+
         $scope.open = function () {
             $oll.load( 'vendor/angular/ui-bootstrap-tpls.js' ).then( function () {
                 var $modal = $injector.get( '$modal' );

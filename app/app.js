@@ -8,13 +8,7 @@
         '$ocLazyLoadProvider' , function ( $llp ) {
             $llp.config( {
                 debug : true ,
-                events : true ,
-                modules : [
-                    {
-                        name : 'BlogModule' ,
-                        files : [ 'modules/blog/module.js' ]
-                    }
-                ]
+                events : true
             } );
         }
     ] );

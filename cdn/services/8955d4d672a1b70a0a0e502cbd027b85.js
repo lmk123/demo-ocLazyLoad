@@ -1,0 +1,1 @@
+angular.module("app.services.TestFactory",[]).factory("TestFactory",function(){return{hello:"I am a string in 8955d4d672a1b70a0a0e502cbd027b85.js"}});
